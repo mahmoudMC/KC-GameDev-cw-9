@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     Animator animator;
-    AudioSource audioSource;
+    //AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class PlayerAnimator : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("Jump");
-            audioSource.Play();
+            //audioSource.Play();
         }
     }
 }
